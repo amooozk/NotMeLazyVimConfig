@@ -4,4 +4,4 @@
 
 It features DAP with CodeLLDB and LSP with clangd
 
-I have used: [LazyVim][https://www.lazyvim.org]
+I have used: [LazyVim](https://www.lazyvim.org)
