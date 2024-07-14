@@ -43,7 +43,7 @@ return {
           { action = "qa",                                                       desc = " Quit",            icon = " ", key = "q" },
         },
           footer = function()
-            return { " Changing the Config without NotMe's permission is strictly prohibited " }
+            return { " Changing the Config without NotMe's permission on NotMe's Machine is strictly prohibited " }
           end,
         },
       }
