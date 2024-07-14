@@ -39,18 +39,19 @@ function Run_code_with_file()
   vim.cmd("! " .. command)
 end
 
-wk.register({
-  ["<leader>"] = {
-    k = {
-      name = " NotMe KeyMaps",
-      c = { "<cmd>lua Compile_code()<CR>", " Compile Code (clang++)" },
-      r = { "<cmd>lua Run_code_with_file()<CR>", " Run Code with Input.txt-Output.txt (c/c++)" },
-      d = { "<cmd>lua Debug_compile_code()<CR>", " Debug Compile Code" },
-      h = { "<cmd>:Telescope themes<CR>", " Theme Switcher" },
-      t = { "<cmd>:TransparentToggle<CR>", " Transparent Colorscheme Toggle" },
-      z = { "<cmd>:ZenMode<CR>", "󰫫 Activate Zen Mode" },
-    },
+wk.add({
+  { "<leader>k", group = "NotMe KeyMaps", icon = "" },
+  { "<leader>kc", "<cmd>lua Compile_code()<CR>", desc = "Compile Code (clang++)", icon = "" },
+  { "<leader>kd", "<cmd>lua Debug_compile_code()<CR>", desc = "Debug Compile Code", icon = "" },
+  { "<leader>kh", "<cmd>:Telescope themes<CR>", desc = "Theme Switcher", icon = "" },
+  {
+    "<leader>kr",
+    "<cmd>lua Run_code_with_file()<CR>",
+    desc = " Run Code with Input.txt-Output.txt (c/c++)",
+    icon = "",
   },
+  { "<leader>kt", "<cmd>:TransparentToggle<CR>", desc = "Transparent Colorscheme Toggle", icon = "" },
+  { "<leader>kz", "<cmd>:ZenMode<CR>", desc = "Activate Zen Mode", icon = "󰫫" },
 })
 
 wk.setup()

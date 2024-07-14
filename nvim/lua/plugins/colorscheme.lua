@@ -1,6 +1,5 @@
 return {
   "xiyaowong/transparent.nvim",
-  "ellisonleao/gruvbox.nvim",
   {
     "catppuccin/nvim",
     lazy = true,
@@ -59,6 +58,7 @@ return {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "catppuccin",
+      -- colorscheme = "tokyonight",
     },
   },
 }
