@@ -51,10 +51,7 @@ wk.add({
     icon = "",
   },
   { "<leader>kt", "<cmd>:TransparentToggle<CR>", desc = "Transparent Colorscheme Toggle", icon = "" },
-  { "<leader>ky", ":<C-u>'<,'>w !clip.exe<CR>", desc = "Copy to Windows Clipboard", icon = "󱉬", mode = "v" },
   { "<leader>kz", "<cmd>:ZenMode<CR>", desc = "Activate Zen Mode", icon = "󰫫" },
 })
 
 wk.setup()
-
--- vim.api.nvim_set_keymap("v", "<leader>ky", ":<C-u>'<,'>w !clip.exe<CR>", { noremap = true, silent = true })
