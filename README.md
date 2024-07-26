@@ -1,4 +1,4 @@
-# This is NotMeNvimConfig
+# This is NotMeLazyVimConfig
 
 ## This Nvim configuration is made for my C++ projects
 
